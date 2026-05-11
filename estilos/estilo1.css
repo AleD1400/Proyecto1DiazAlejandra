@@ -1,24 +1,97 @@
-h1,h2{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+h1{
+    font-family: 'Poppins', sans-serif;
     font-size: 30px;
-    color:#1E8096;
+    color: #284a62; 
     text-align: center;
-}
-header{
-    border: 3px solid rgb(25, 121, 134);
-    border-radius: 20px;
-    background-color: white;
-    padding: 20px;
     margin: 20px;
 }
+
+h2{
+    font-size: 25px;
+    text-align: center;
+    color: #284a62;
+}
+
+p{
+    font-size: 20px;
+}
+header{
+    background-color: #e8e7d4; 
+    padding: 10px 0px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100%;
+    margin: 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
 ul{
     font-family:Arial, Helvetica, sans-serif;
     font-size: 16px;
     color:black;
 }
+nav{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
 body{
-    background-color:aliceblue;
+    background-color: #fcfbf7;
+    font-family: sans-serif;
+    color: #262626;
+}
+/* Contenedor Principal */
+.contenedor-principal {
+    background-color:#fcfbf7;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; /* Centra verticalmente imagen y texto entre sí */
+    justify-content: center;
+    gap: 50px; /* Más espacio entre columnas */
+    padding: 60px 5%; /* Padding lateral en porcentaje para que respire */
+    max-width: 1600px; /* Aumentamos el máximo para pantallas 4k o anchas */
+    margin: 0 auto;
+    min-height: 80vh; /* Hace que la sección sea alta y no se vea "chica" */
 
+}
+/* Lado Izquierdo */
+.columna-izquierda {
+    flex: 1 1 450px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    max-width: 600px;
+}
+
+/* Lado Derecho */
+.columna-derecha {
+    flex: 1.2 1 500px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.textovida h4 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #284a62;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.textovida p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #00121b;
+}
+.tarjeta-vida{
+    background-color: #e8e7d4; 
+    border: 3px solid #bcb68f;
+    border-radius: 30px;
+    padding: 40px;
+    position: relative;
+    box-shadow: 10px 10px 0px #9fa0a4;
 }
 #Cuento{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -26,31 +99,272 @@ body{
     text-align: center;
     background-color: azure;
     color: #0E3F4A;
+    width: 100%;
 }
 h4{
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: center;
-    color: #1E8096;
-    color:#186D80;
+    color: #284a62;
 }
 footer{
     text-align: center;
+    
 }
 .imagenestilo{
-    display: block;
-    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    border-radius: 25px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+
 }
+
 #gato{
-    width: 1500px;
+    width: 100%;
     margin: 0;
     border: 20px;
+    display: flex;
+}
+
+.boton{
+    width: 113px;
+    height: 41px;
+    background: #284a62; 
+    border-radius: 40px;
+    margin: 15px;
+    list-style: none;
+    filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family:sans-serif;
+}
+
+.boton a{
+    color: #e8e7d4;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.menu{
+    display: flex;
+    justify-self: center;
+    padding: 0;
+    margin:0;
+}
+
+.seccion{
+    background-color: #284a62;
+    margin: 0px;
+    padding: 50px 20px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.datocontacto{
+    background-color: #e8e7d4;
+    padding: 20px;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    width: 280px;
+    min-height: 90px;
+    justify-content: center;
+    text-align: center;
+    flex: 0 1 280px;
+    color: #00121b;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
+}
+.frase-contacto{
+    color: #e8e7d4;
+    text-align: center;
+    max-width: 500px;
+    margin: 0 auto 30px;
+    font-size: 1.1rem;
+}
+
+.contacto{
+    margin:0;
+    font-family: Arial, sans-serif;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    display: flex;
+}
+
+.tarjeta-contacto{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    width: 100%;
+    padding: 20px;
+    gap: 10px;
+    padding: 20px;
+}
+/*Edicion de fotos en intereses*/
+
+.flotante-edicion{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 10px 20 px 30px;
+    flex-wrap: wrap;
+}
+
+.cuadro-edicion{
+    flex: 1 1 300px;
+    max-width: 450px;
+    background-color: #e8e7d4;
+    padding: 15px;
+    flex-direction: column;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+.cuadro-edicion img{
+    width: 100%;
+    height: 280px;
+    border-radius: 10px;
+    object-fit: cover;
+    display: flex;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    align-items: center;
+}
+.banner-naturaleza{
+    width: 100%;
+    border-radius: 0;
+    max-height: 420px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.banner-naturaleza img{
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    display: block;
+}
+
+.galeria-gato{
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+    padding: 10px 20px 40px;
+}
+
+.cuadro-gato{
+    flex: 1 1 200px;
+    max-width: 280px;
+    background-color: #e8e7d4;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.cuadro-gato img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+}
+
+/*cuento de terror*/
+
+.tarjeta-cuento{
+    background-color: #284a62;
+    margin: 20px auto;
+    width: 90%;
+    padding: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 20px;
+    border: none;
+    line-height: 1.8;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    
+}
+.cuento-etiqueta{
+    font-size: 0.75rem;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #f7f1ea;
+    margin-bottom: 14px;
+    font-weight: 600;
+    justify-self:center;
+}
+
+.cuento-titulo{
+    justify-self: center;
+    font-weight: 600;
+    color: #e8e7d4;
+}
+.cuento-resumen p {
+    color: white;             /* texto claro legible */
+    font-size: 1rem;
+    line-height: 1.9;
+}
+.cuento-autor{
+    font-style: italic;
+    font-size:large;
+    color: #bcb68f;
+}
+
+.link-cuento{
+    align-items: center;
+    text-decoration: none;
+    font-size:18px;
+    justify-items:center;
+    color: #f2e9e8;
+}
+
+
+@media (max-width: 600px){
+.menu{
+    flex-direction: column;
+    align-items: center;
+    padding:0;
+}
+.boton{
+    width: 200px;
+}
+
+h1{
+    font-size: 32px;
+}
+
+.imagenestilo{
+    width: 90%;
+}
+.tarjeta-contacto{
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap:12px;
+}
+.datocontacto{
+    width: 85%;
+    max-width: 100%;
+    flex: unset;
+    padding: 14px 20px;
 }
 .textocuento{
-    background-color: #CFDEE6;
-    margin: 0 auto;
-    width: 1400px;
-    height: auto;
+    width: 95%;
     padding: 20px;
-    font-family: 'Times New Roman', Times, serif;
-    border: 3px solid rgb(25, 121, 134);
+}
+.cuadro-edicion {
+        flex: 1 1 100%;
+        max-width: 100%;
+}
+.cuadro-gato {
+        flex: 1 1 100%;
+        max-width: 100%;
+}
+ 
+.banner-naturaleza img { height: 220px; }
+ 
+.Tarjeta-cuento {
+        padding: 35px 22px 30px;
+}
 }

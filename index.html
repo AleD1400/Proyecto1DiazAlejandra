@@ -1,30 +1,48 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
- 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi primer sitio</title>   
     <link rel="stylesheet" href="estilos/estilo1.css">
 </head>
 <body>
-    <body style="background-color:aliceblue;"></body>
     <header>
-        <h1>Mi Sitio Personal</h1>
+        <h1>Diaz Maria Alejandra</h1>
         <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="intereses.html">Intereses</a></li>
+            <ul class="menu">
+                <li class="boton"><a href="index.html">Inicio</a></li>
+                <li class="boton"><a href="contacto.html">Contacto</a></li>
+                <li class="boton"><a href="intereses.html">Intereses</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <img class="imagenestilo" src="img/Info1.png" alt="infografia de Alejandra Diaz">
-        <p style="text-align: center; color:#417594; font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: 20px;" >Aquí se aprecia lo que hago en mi vida</p>
+
+    <main class="contenedor-principal">
+        <div class="columna-izquierda"> 
+            <img class="imagenestilo" src="img/Info1.png" alt="infografia de Alejandra Diaz">
+        </div>
+
+        <div class="columna-derecha">
+            <div class="tarjeta-vida">
+            <div class="textovida">
+                <h4>UN RESUMEN DE MI VIDA</h4>
+                <p>
+                    Hola, soy <strong>Alejandra</strong>. Nací en Chubut y actualmente estoy 
+                    enfocada en mi crecimiento profesional en Buenos Aires. Soy Técnica informatica 
+                    y estoy cursando la carrera de Administración de Empresas.
+                </p>
+                <p>
+                    Me considero una persona creativa y detallista, lo que me llevó a interesarme por el 
+                    diseño gráfico y la edición de imágenes. Tengo un emprendimiento familiar 
+                    y disfruto mucho de la vida al aire libre y de la compañía de mi gato Dibu.
+                </p>
+            </div> 
+            </div>
+        </div>
     </main>
     <footer>
-        <p>Todos los derechos reservados</p>
+        <p>© 2026 - Todos los derechos reservados</p>
     </footer>
 </body>
 </html>
